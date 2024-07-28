@@ -12,7 +12,6 @@ services:
 
   app:
     build: .
-    command: ["./main"]
     env_file:
       - ./.env
     environment:
