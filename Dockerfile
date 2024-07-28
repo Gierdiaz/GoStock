@@ -9,9 +9,6 @@ RUN go mod tidy
 # Copia todos os arquivos do projeto para o contêiner
 COPY . .
 
-# Copia o arquivo .env para o diretório /app no contêiner
-COPY .env .env
-
 # Compila o aplicativo
 RUN go build -o main ./api/cmd/main.go
 

@@ -16,7 +16,7 @@ services:
     build: .
     command: ["./main"]
     env_file:
-      - .env
+      - ./.env
     environment:
       DB_USERNAME: ${DB_USERNAME}
       DB_PASSWORD: ${DB_PASSWORD}
